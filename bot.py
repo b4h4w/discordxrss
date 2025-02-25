@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 # Configuration
 CHANNEL_ID = 1342892359242743850  # Replace with your channel ID (integer)
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+GITHUB_TOKEN = os.getenv('GIT_TOKEN')
 REPO_PATH = './repo'  # Local path for repository
 RSS_FILE = 'rss.xml'
 
