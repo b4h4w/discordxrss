@@ -14,7 +14,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 # Configuration
-CHANNEL_ID = YOUR_CHANNEL_ID_HERE  # Replace with your channel ID (integer)
+CHANNEL_ID = 1342892359242743850  # Replace with your channel ID (integer)
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 REPO_PATH = './repo'  # Local path for repository
@@ -23,7 +23,7 @@ RSS_FILE = 'rss.xml'
 async def update_rss(messages):
     # Clone or open repository
     if not os.path.exists(REPO_PATH):
-        repo_url = f'https://{GITHUB_TOKEN}@github.com/YOUR_USERNAME/YOUR_REPO.git'
+        repo_url = f'https://{GITHUB_TOKEN}@github.com/b4h4w/discordxrss.git'
         repo = Repo.clone_from(repo_url, REPO_PATH)
     else:
         repo = Repo(REPO_PATH)
